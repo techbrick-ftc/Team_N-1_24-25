@@ -3,4 +3,6 @@ package org.firstinspires.ftc.teamcode;
 
 public class gameConstants {
 
+    int testNum = 5;
+
 }
