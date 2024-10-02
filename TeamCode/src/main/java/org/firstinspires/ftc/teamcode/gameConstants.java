@@ -5,4 +5,6 @@ public class gameConstants {
 
     int testNum = 5;
 
+    int bestNum = 7;
+
 }
