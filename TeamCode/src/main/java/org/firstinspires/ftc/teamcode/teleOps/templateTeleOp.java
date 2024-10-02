@@ -16,12 +16,16 @@ import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 @TeleOp(name = "testTeleOp")
 public class templateTeleOp extends LinearOpMode {
 
+    // Importing handlers
+    templateDrive drive = new templateDrive(hardwareMap);
+
     // Drive Vars
     boolean driveAllowed = true;
 
     double xMove;
     double yMove;
     double rX ;
+    double d_multiplier = 0.5;
 
 
     // Timer
@@ -40,8 +44,9 @@ public class templateTeleOp extends LinearOpMode {
             yMove = -gamepad1.left_stick_y;
             rX = gamepad1.right_stick_x;
 
-
-
+            if (driveAllowed) {
+                drive.run(xMove, yMove, rX, d_multiplier);
+            }
         }
     }
 }

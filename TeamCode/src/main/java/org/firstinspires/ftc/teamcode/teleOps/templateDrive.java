@@ -30,16 +30,6 @@ public class templateDrive {
     DcMotorEx fr;
     DcMotorEx fl;
 
-    double driveSpeed = 0.5;
-    double turningSpeed = 0.5;
-
-    boolean driveAllowed = true;
-
-    // Updating variables
-    double y_move;
-    double x_move;
-    double rotation_x;
-
     public double offset = 0;
 
     // Getting Hardware map from main file and setting up
