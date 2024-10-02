@@ -3,7 +3,4 @@ package org.firstinspires.ftc.teamcode.teleOps;
 
 public class gameConstants {
 
-    int test = 1;
-
-
 }
